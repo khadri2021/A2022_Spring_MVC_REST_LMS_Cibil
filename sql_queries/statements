@@ -1,0 +1,32 @@
+-- Feature 1 : Story 1 - ACCOUNT_DATA Table Structure
+-----------------------------------------------------
+CREATE TABLE `account_data` (
+  `FIRST_NAME` varchar(40) NOT NULL,
+  `LAST_NAME` varchar(45) DEFAULT NULL,
+  `FATHER_NAME` varchar(45) DEFAULT NULL,
+  `AGE` varchar(45) DEFAULT NULL,
+  `EMAIL` varchar(45) DEFAULT NULL,
+  `PHONE_NUMBER` varchar(45) DEFAULT NULL,
+  `ALTERNATIVE_PHONE_NUMBER` varchar(45) DEFAULT NULL,
+  `ACCOUNT_TYPE` varchar(45) DEFAULT NULL,
+  `CURRENT_ADDRESS` varchar(45) DEFAULT NULL,
+  `PERMANENT_ADDRESS` varchar(45) DEFAULT NULL,
+  `ADHAAR_NUMBER` varchar(45) NOT NULL,
+  `PAN_NUMBER` varchar(45) NOT NULL,
+  `NOMINEE_NAME` varchar(45) DEFAULT NULL,
+  `NOMINEE_ADHAAR_NUMBER` varchar(45) DEFAULT NULL,
+  `NOMINEE_ACCOUNT_NUMBER` varchar(45) DEFAULT NULL,
+  `LOAN_ELIGIBLE` varchar(45) DEFAULT NULL,
+  `ACCOUNT_NUMBER` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`ADHAAR_NUMBER`,`PAN_NUMBER`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+--------------------------------------------------------------------
+-- Feature 2 : Story 1 - CIBIL_DATA Table Structure
+-----------------------------------------------------
+CREATE TABLE `cibil_data` (
+  `ADHAAR_NUMBER` varchar(66) NOT NULL,
+  `PAN_NUMBER` varchar(45) DEFAULT NULL,
+  `CIBIL_SCORE` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`ADHAAR_NUMBER`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+---------------------------------------------------------------------

@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "aa6ab9cf-6591-4bba-b0af-49d5dc1dc034",
+		"name": "A2022_Spring_MVC_REST_LMS_Cibil",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29391279"
+	},
+	"item": [
+		{
+			"name": "Feature2_Story1 : Cibil Check",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
